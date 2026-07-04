@@ -1,8 +1,8 @@
 class Macjuice < Formula
   desc "Native macOS menu bar battery monitor with history and Liquid Glass UI"
   homepage "https://github.com/aakarsh-goyal/macjuice"
-  url "https://github.com/aakarsh-goyal/macjuice/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "c604255efdecd841ddc326c6ed92c7ac3a86de6092f598380af8f5f78bf2f89c"
+  url "https://github.com/aakarsh-goyal/macjuice/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "46eaa0dfb7af9d363d2f487c9c5e1deefcf88ae73ecbf43f10ef6ba449bd884c"
   license "MIT"
   head "https://github.com/aakarsh-goyal/macjuice.git", branch: "main"
 
