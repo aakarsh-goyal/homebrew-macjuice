@@ -4,10 +4,13 @@ Homebrew tap for [MacJuice](https://github.com/aakarsh-goyal/macjuice) — a
 native macOS menu bar battery monitor with history and a Liquid Glass UI.
 
 ```sh
-brew install aakarsh-goyal/macjuice/macjuice
-cp -R "$(brew --prefix)/opt/macjuice/MacJuice.app" /Applications/
-open /Applications/MacJuice.app
+brew install --cask aakarsh-goyal/macjuice/macjuice
 ```
 
-Builds from source on your machine (Command Line Tools required — Homebrew
-already needs them), so there is no Gatekeeper quarantine.
+Installs the prebuilt, ad-hoc signed Apple Silicon MacJuice.app straight into
+/Applications and clears the download quarantine flag so it launches.
+
+```sh
+brew uninstall --cask macjuice          # remove the app
+brew uninstall --cask --zap macjuice    # ...and its recorded data and preferences
+```
